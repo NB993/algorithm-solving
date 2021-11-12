@@ -1,14 +1,10 @@
-package programmers.lvl1;
+package programmers.lvl1.나누어_떨어지는_숫자_배열;
 
 import java.util.*;
 
-public class Main12910 {
+public class Solution {
 
-  public static void main(String[] args) {
-
-  }
-
-  public int[] solution(int[] arr, int divisor) {
+  public static int[] solution(int[] arr, int divisor) {
     int[] answer = {};
     List<Integer> answerList = new ArrayList<>();
 
@@ -30,7 +26,6 @@ public class Main12910 {
 
     return answer;
 
-    //다른 사람 코드
 //    int[] answer = Arrays.stream(arr).filter(factor -> factor % divisor == 0).toArray();
 //    if(answer.length == 0) answer = new int[] {-1};
 //    java.util.Arrays.sort(answer);
