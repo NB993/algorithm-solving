@@ -1,6 +1,5 @@
-package programmers.basic;
+package programmers.lvl1;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main64061 {
