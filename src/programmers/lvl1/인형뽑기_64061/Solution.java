@@ -1,4 +1,4 @@
-package programmers.lvl1.인형뽑기_68644;
+package programmers.lvl1.인형뽑기_64061;
 
 import java.util.*;
 

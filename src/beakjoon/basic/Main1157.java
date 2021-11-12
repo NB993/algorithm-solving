@@ -11,6 +11,8 @@ public class Main1157 {
     String[] arr= str.toUpperCase().split("");
 
     StringTokenizer st = new StringTokenizer(br.readLine());
+ArrayList ar = new ArrayList();
+Map map = new HashMap();
 
     System.out.println((int) 'B');
   }

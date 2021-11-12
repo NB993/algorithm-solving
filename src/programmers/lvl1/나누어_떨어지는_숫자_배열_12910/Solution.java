@@ -1,4 +1,4 @@
-package programmers.lvl1.나누어_떨어지는_숫자_배열;
+package programmers.lvl1.나누어_떨어지는_숫자_배열_12910;
 
 import java.util.*;
 
