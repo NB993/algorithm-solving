@@ -1,35 +1,34 @@
-package programmers.lvl1.인형뽑기_64061;
-
-import java.util.*;
+package programmers.lvl1;
 
 public class Solution {
+  public String solution(int a, int b) {
+    String answer = "";
 
-  public static int solution(int[][] board, int[] moves) {
-    int answer = 0;
+    int[] remainder = {3, 1, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3};
+    int remainDaySum = 0;
 
-    List<Integer> basket = new ArrayList<>();
-    int boardLength = board[0].length;
+    for (int i = 0; i < a - 1; i++) {
+      remainDaySum += remainder[i];
+    }
+    remainDaySum += b;
 
-    for (int i = 0; i < moves.length; i++) {
-      for (int j = 0; j < boardLength; j++) {
-        //아래 for문 하나 줄이자.
-        for (int k = 0; k < basket.size() - 1; k++) {
-          if (basket.get(k) == basket.get(k + 1)) {
-            basket.remove(k);
-            basket.remove(k);
-            answer += 2;
-            k = 0;
-          }
-        }
-
-        if (board[j][moves[i] - 1] != 0) {
-          basket.add(board[j][moves[i] - 1]);
-          board[j][moves[i] - 1] = 0;
-          break;
-        }
-      }
+    if (remainDaySum % 7 == 0) {
+      answer = "THU";
+    } else if (remainDaySum % 7 == 1) {
+      answer = "FRI";
+    } else if (remainDaySum % 7 == 2){
+      answer = "SAT";
+    } else if (remainDaySum % 7 == 3){
+      answer = "SUN";
+    } else if (remainDaySum % 7 == 4){
+      answer = "MON";
+    } else if (remainDaySum % 7 == 5){
+      answer = "TUE";
+    } else if (remainDaySum % 7 == 6){
+      answer = "WED";
     }
 
     return answer;
+
   }
 }
