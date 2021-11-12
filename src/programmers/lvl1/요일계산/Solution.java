@@ -1,4 +1,4 @@
-package programmers.lvl1;
+package programmers.lvl1.요일계산;
 
 public class Solution {
   public String solution(int a, int b) {
