@@ -1,10 +1,8 @@
 package leetcode.palindrome_number;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Solution {
 
@@ -19,14 +17,6 @@ public class Solution {
 
     int numLength = Integer.toString(x).length();
     int divideNum = (int) Math.pow(10, numLength / 2);
-
-//    int divideNum;
-//    if (numLength % 2 == 0) {
-//      divideNum = (int) Math.pow(10, (numLength / 2)) ;
-//    }
-//    if (numLength % 2 == 1) {
-//      divideNum = (int) Math.pow(10, (numLength / 2) + 1)
-//    }
 
     String front = "";
     String rear = "";
