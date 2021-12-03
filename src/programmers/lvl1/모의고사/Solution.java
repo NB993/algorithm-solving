@@ -20,8 +20,6 @@ public class Solution {
     System.out.println(member3Count);
 
     return answer;
-
-    Arrays.stream(member1).
   }
 
   public static int rigthAnswerCheck(int[] memberArr, int[] answers, int startCount, int rightAnswerCount) {

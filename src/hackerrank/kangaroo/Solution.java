@@ -33,13 +33,26 @@ class Result {
       return "NO";
     }
 
-    if ((x2 - x1) % Math.abs(v1 - v2) == 0) {
+    int commonMultiple = mod(v1, v2);
+
+//    if ((x2 - x1) % Math.abs(v1 - v2) == 0) {
+    if ((x2 - x1) % commonMultiple == 0) {
       return "YES";
     }
     return "NO";
   }
 
+
+  public static int mod(int a, int b) {
+    if (a % b == 0) {
+      return b;
+    }
+    return mod(b, a % b);
+  }
+
 }
+
+
 
 public class Solution {
   public static void main(String[] args) throws IOException {
