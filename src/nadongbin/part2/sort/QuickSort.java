@@ -1,4 +1,4 @@
-package studying_etc;
+package nadongbin.part2.sort;
 
 public class QuickSort {
 
