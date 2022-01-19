@@ -2,7 +2,7 @@ package programmers.lvl1.이상한_문자_만들기;
 
 public class Solution {
     public static String solution(String s) {
-        String[] words = s.split(" ");
+        String[] words = s.split(" ", -1);
 
         String ans = "";
 
